@@ -35,6 +35,7 @@ module.exports = {
     'react-refresh',
   ],
   rules: {
+    'import/no-extraneous-dependencies': 'off',
     'react-refresh/only-export-components': 'warn',
     'consistent-return': ['off'],
     'no-console': [

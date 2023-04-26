@@ -1,0 +1,14 @@
+.Input {
+  border: 1.5px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  padding: 8px 12px;
+  transition: all 0.2s;
+  outline: 0;
+  font-size: 14px;
+
+  color: var(--secondary-color);
+
+  &:is(:active, :focus) {
+    border-color: var(--secondary-color);
+  }
+}

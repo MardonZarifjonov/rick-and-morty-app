@@ -1,0 +1,58 @@
+.Pagination {
+  display: flex;
+  gap: 4px;
+
+  &.Loading {
+    opacity: 0.5;
+    pointer-events: none;
+
+    // li {
+    //   background-color: gainsboro;
+    //   color: var(--secondary-color);
+    //   &.active {
+    //     span {
+    //       color: var(--secondary-color);
+    //     }
+    //   }
+    // }
+  }
+
+  li {
+    display: grid;
+    place-items: center;
+    border-radius: var(--border-radius);
+    font-size: 14px;
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    border: 1.5px solid transparent;
+    transition: all 0.2s;
+
+    .dots {
+      font-size: 20px;
+      height: 100%;
+    }
+
+    span {
+      transition: all 0.3s;
+    }
+
+    &.active {
+      border: 1.5px solid var(--primary-color);
+      color: var(--primary-color);
+      span {
+        color: var(--primary-color);
+      }
+    }
+
+    &:hover {
+      border: 1.5px solid var(--primary-color);
+      span {
+        color: var(--primary-color);
+      }
+      .dots {
+        color: var(--primary-color);
+      }
+    }
+  }
+}

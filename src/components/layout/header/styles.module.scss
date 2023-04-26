@@ -1,0 +1,29 @@
+@import '../../../assets/css/breakpoints.scss';
+
+.Header {
+  display: flex;
+  align-items: center;
+  height: var(--header-height);
+  border-bottom: 1px solid #f0f0f0;
+  box-shadow: 0 4px 2px -2px #f0f0f0;
+  padding: 0 20px;
+
+  .extraRight {
+    margin-left: auto;
+  }
+
+  img {
+    max-width: 50px;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    h1 {
+      display: none;
+    }
+  }
+}
