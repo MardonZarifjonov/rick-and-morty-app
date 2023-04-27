@@ -1,3 +1,5 @@
+@import '../../assets/css/breakpoints.scss';
+
 .View {
   padding: 20px;
   border: 1px solid #f0f0f0;
@@ -27,6 +29,12 @@
       &.hideBorder {
         border-color: transparent;
       }
+    }
+  }
+
+  @media screen and (max-width: $breakpoint-sm) {
+    div {
+      font-size: 16px;
     }
   }
 }
